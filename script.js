@@ -1,5 +1,12 @@
 // JS logic for CTA section form and submit button //
 
+// Smooth Scroll to CTA
+function scrollToSignup() {
+  document.getElementById("signup").scrollIntoView({ behavior: "smooth" });
+}
+
+
+
 // JS logic for dark and light mode //
 const btn = document.getElementById("theme-toggle");
 const body = document.body;
