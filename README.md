@@ -38,11 +38,13 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 * Community Forms and Chat Group
 
 ## Deployed Link
-*You can view the deployed page here: 
-[GitHub Pages](https://unw10181.github.io/PBall/)
 
-* You can view the repository:  
-[GitHub.com](https://github.com/unw10181/PBall)
+- You can view the deployed page here:  
+  [GitHub Pages](https://unw10181.github.io/PBall/)
+
+- You can view the repository:  
+  [GitHub.com](https://github.com/unw10181/PBall)
+
 
 ## About The Authors
 Clarence, Dan, and Homam are front-end developers with a passion for pickleball. You can find them at the pickleball courts when they are not in class learning about JavaScript.
