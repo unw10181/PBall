@@ -37,7 +37,7 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 ## <a name="nextsteps"></a>Project Next Steps
 * Event Calendar and Booking Integration
 * Contests and Giveaway Sign-Ups
-* Community Forms and Chat Group
+* Community Forums or Chat Group
 
 ## Deployed Link
 
