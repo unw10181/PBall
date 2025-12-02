@@ -38,6 +38,7 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 * Community Forms and Chat Group
 
 ## Deployed Link
+*You can view the deployed page here: 
 [GitHub Pages](https://unw10181.github.io/PBall/)
 
 * You can view the repository:  
