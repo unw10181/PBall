@@ -53,5 +53,18 @@ font-weight: 600;
 
 
 /* Style all buttons */
+button {
+  background-color: #f7d850; 
+  color: #121212;            
+  font-weight: 600;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #d6b841;
+}
+
 /* Style the sign up alert */
 /* creat responsive layouts */
