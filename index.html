@@ -4,115 +4,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pickleball Organization</title>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  
-  <link rel="stylesheet" href="./style.css" /> 
-  
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+  <title>The Pickleball Organization</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
   <script src="./script.js" defer></script>
-
 </head>
 
 <body>
-  <div class="main-container">
-
-    <nav class="grey darken-2 z-depth-1">
+  
+  <header>
+    <nav class="custom-navbar">
       <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo left logo">P-BALL</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#!" class="brand-logo">P-BALL</a>
+        
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
         
         <ul class="right hide-on-med-and-down">
-          <li><a class="nav-home">HOME</a></li>
-          <li><a class="nav-services">SERVICES</a></li>
-          <li><a class="nav-join">JOIN US</a></li>
-          <li><a id="dark-mode-toggle"><i class="material-icons">brightness_4</i></a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+          <li><a href="#footer-links">Links</a></li>
+          <li><a href="#" id="theme-toggle" class="theme-toggle"><i class="material-icons">brightness_4</i></a></li>
         </ul>
       </div>
     </nav>
     
-    <ul class="sidenav" id="mobile-demo">
-      <li><a class="nav-home">HOME</a></li>
-      <li><a class="nav-services">SERVICES</a></li>
-      <li><a class="nav-join">JOIN US</a></li>
-      <li><a id="dark-mode-toggle-mobile"><i class="material-icons">brightness_4</i> Dark Mode</a></li>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#signup">Sign Up</a></li>
+      <li><a href="#footer-links">Links</a></li>
+      <li><button id="theme-toggle-mobile" class="theme-toggle btn-flat" type="button">Dark/Light Mode</button></li>
     </ul>
+  </header>
 
-    <div class="hero-section black lighten-1">
+  <section class="hero section">
+    <img src="./img/Pickleball-1-scaled.jpg" alt="pickleball players" class="hero-img" />
+    <div class="container center-align">
+      <h2 class="white-text">Welcome to The Pickleball Organization</h2>
+      <p class="flow-text white-text">Your ultimate resource for all things pickleball!</p>
+      <a href="#signup" class="waves-effect waves-light btn-large yellow darken-1 signup-btn">Join Now</a>
+    </div>
+  </section>
+
+  <section id="features" class="features section container">
+    <h2 class="center-align">Why Join The Pickleball Organization?</h2>
+    
+    <div class="row feature-cards">
+      
+      <div class="col s12 m6 l4">
+        <div class="card feature-card center-align">
+          <div class="card-image">
+            <img class="feature-img" src="./img/pball-4.png" alt="Expert Tips" />
+          </div>
+          <div class="card-content">
+            <h3>Expert Tips & Drills</h3>
+            <p>Access exclusive tips and drills from top pickleball coaches to improve your game.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s12 m6 l4">
+        <div class="card feature-card center-align">
+          <div class="card-image">
+            <img class="feature-img" src="./img/pball-7.jpg" alt="Community Access" />
+          </div>
+          <div class="card-content">
+            <h3>Community Access</h3>
+            <p>Join a vibrant community of pickleball enthusiasts to share experiences and advice.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s12 m12 l4">
+        <div class="card feature-card center-align">
+          <div class="card-image">
+            <img class="feature-img" src="./img/pball-8.png" alt="Equipment Discounts" />
+          </div>
+          <div class="card-content">
+            <h3>Equipment Discounts</h3>
+            <p>Enjoy special discounts on pickleball gear and equipment from our trusted partners.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signup" class="cta-section section white">
+    <div class="container center-align">
+      <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <h2>Join Our New Player Community</h2>
+          <p class="flow-text">Free tips, beginner drills, equipment guides + more.</p>
+
+          <div class="input-field">
+            <input type="email" id="emailInput" class="validate" placeholder="Enter your email" />
+            <label for="emailInput"></label> 
+          </div>
+          
+          <button class="signup-btn waves-effect waves-light btn-large yellow darken-1" type="button" onclick="submitEmail()">
+            Sign Up
+          </button>
+          
+          <div id="alertBox" class="custom-alert card-panel" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="footer-links" class="page-footer custom-navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">The Pickleball Organization</h5>
+          <p class="grey-text text-lighten-4">Connecting players to the fastest-growing sport in the world.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Quick Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#features">Features</a></li>
+            <li><a class="grey-text text-lighten-3" href="#signup">Join Our Community</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
       <div class="container center-align">
-        <h2 class="white-text">Elevate Your Pickleball Game</h2>
-        <p class="white-text flow-text">Join the fastest-growing community and organize your matches.</p>
+      &copy; 2025 The Pickleball Organization
       </div>
     </div>
+  </footer>
 
-    <div class="features-section grey lighten-3 section">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m4 center-align">
-            <div class="card-panel grey lighten-2 feature-box-1">
-              <i class="large material-icons">group</i>
-              <h5>Matchmaking</h5>
-            </div>
-          </div>
-          <div class="col s12 m4 center-align">
-            <div class="card-panel grey lighten-2 feature-box-2">
-              <i class="large material-icons">schedule</i>
-              <h5>Event Scheduling</h5>
-            </div>
-          </div>
-          <div class="col s12 m4 center-align">
-            <div class="card-panel grey lighten-2 feature-box-3">
-              <i class="large material-icons">assessment</i>
-              <h5>Player Stats</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="join-section grey darken-1 section">
-      <div class="container center-align">
-        <h2 class="join-title white-text">JOIN US</h2>
-        <div class="row">
-          <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <form id="join-form" class="card-panel grey darken-2">
-              <div class="input-field">
-                <input id="input_name" type="text" class="input-name validate white-text">
-                <label for="input_name" class="label-name">FULL NAME</label>
-              </div>
-              <div class="input-field">
-                <input id="input_email" type="email" class="input-email validate white-text">
-                <label for="input_email" class="label-email">EMAIL ADDRESS</label>
-              </div>
-              <button type="submit" class="btn btn-large waves-effect waves-light submit-button green accent-4">
-                SUBMIT
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="page-footer grey darken-3">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">P-BALL Organization</h5>
-            <p class="grey-text text-lighten-4">Connecting pickleball players worldwide.</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright grey darken-4">
-        <div class="container">
-          &copy; 2025
-        </div>
-      </div>
-    </footer>
-
-  </div>
 </body>
 
 </html>

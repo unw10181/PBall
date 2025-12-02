@@ -1,3 +1,9 @@
+// Initialize Materialize components
+document.addEventListener('DOMContentLoaded', function() {
+  var sidenav = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sidenav);
+});
+
 // JS logic for CTA section form and submit button //
 
 // Smooth Scroll to CTA
@@ -41,6 +47,7 @@ function submitEmail() {
 
 // JS logic for dark and light mode //
 const btn = document.getElementById("theme-toggle");
+const btnMobile = document.getElementById("theme-toggle-mobile");
 const body = document.body;
 
 const savedTheme = localStorage.getItem("theme");
@@ -48,7 +55,7 @@ if (savedTheme == "dark") {
   body.classList.add("dark-mode");
 }
 
-btn.addEventListener("click", () => {
+function toggleTheme() {
   body.classList.toggle("dark-mode");
 
   if (body.classList.contains("dark-mode")) {
@@ -56,4 +63,7 @@ btn.addEventListener("click", () => {
   } else {
     localStorage.setItem("theme", "light");
   }
-});
+}
+
+btn.addEventListener("click", toggleTheme);
+btnMobile.addEventListener("click", toggleTheme);

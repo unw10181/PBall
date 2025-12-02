@@ -1,124 +1,175 @@
-
-*, *::before, *::after {
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
+
 
 body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.5;
-    background-color: #f5f5f5;
-    transition: background-color 0.3s ease;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #253715;
+  background-color: azure;
 }
-
-.main-container {
-    min-height: 100vh;
-    position: relative;
-
-}
-
-.logo {
-    font-size: 2em;
-    font-weight: 800;
-}
-.nav-wrapper a {
-    font-weight: 600;
-}
-
-/* Hero Section */
-.hero-section {
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: url('pickleball_court.jpg') no-repeat center center/cover; 
-}
-
-/* Features Section */
-.features-section {
-    padding: 60px 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.feature-box-1, .feature-box-2, .feature-box-3 {
-    height: 250px;
-    border-radius: 11px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #e0e0e0;
-}
-.feature-box-1 i, .feature-box-2 i, .feature-box-3 i {
-    font-size: 4em;
-    color: #403f3f;
-}
-
-/* Join Section (Form) */
-.join-section {
-
-    padding: 80px 0;
-}
-
-.join-title {
-    font-size: 3em;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-/* Form Styling */
-#join-form {
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.input-field input:focus + label {
-    color: #00e676;
-}
-.input-field input:focus {
-    border-bottom: 1px solid #00e676;
-    box-shadow: 0 1px 0 0 #00e676;
-}
-
-
 
 /* --- Dark Mode Styles --- */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+  background-color: dimgray;
+  color: #f0f0f0;
 }
 
-body.dark-mode .nav-wrapper,
+body.dark-mode .custom-navbar {
+    background-color: #253715;
+}
+
 body.dark-mode .sidenav {
-    background-color: #1f1f1f;
-}
-
-body.dark-mode .join-section,
-body.dark-mode .page-footer {
-    background-color: #121212;
-}
-
-body.dark-mode .join-title {
-    color: #e0e0e0;
-}
-
-body.dark-mode .card-panel {
     background-color: #333;
-    color: #e0e0e0;
+}
+body.dark-mode .sidenav a {
+    color: #f0f0f0;
 }
 
-body.dark-mode .input-field input {
-    border-bottom: 1px solid #666;
-    color: #e0e0e0;
+body.dark-mode .card,
+body.dark-mode .cta-section {
+  background-color: #444;
+  color: #f0f0f0;
 }
 
-body.dark-mode .input-field input:focus {
-    border-bottom: 1px solid #00e676;
-    box-shadow: 0 1px 0 0 #00e676;
+
+body.dark-mode h2 {
+    color: #f7d850; 
 }
 
-body.dark-mode .submit-button {
-    background-color: #00a040; 
+body.dark-mode .input-field input.validate {
+    color: #f0f0f0;
+    border-bottom: 1px solid #777;
+}
+body.dark-mode .input-field input.validate:focus {
+    border-bottom: 1px solid #f7d850;
+    box-shadow: 0 1px 0 0 #f7d850;
+}
+body.dark-mode .input-field label {
+    color: #ccc;
+}
+body.dark-mode .input-field label.active {
+    color: #f7d850;
+}
+
+.custom-navbar {
+    background-color: #253715;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 90px;
+    padding-top: 20px
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.theme-toggle i {
+    vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #556b2f; 
+    height: 60vh; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 600px) {
+    .hero {
+        height: 40vh;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Features Section */
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.feature-card {
+    transition: transform 0.3s ease;
+    min-height: 400px;
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.feature-img {
+    height: 150px; 
+    width: 100%;
+    object-fit: cover;
+}
+.feature-card h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+/* Call to Action (CTA) Section */
+.cta-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f0f0f0; 
+
+/* Form Styling */
+#emailInput {
+  border-bottom: 1px solid #253715;
+}
+#emailInput:focus {
+    border-bottom: 1px solid #f7d850;
+    box-shadow: 0 1px 0 0 #f7d850;
+}
+
+/* Custom Button Styles (Applied to Materialize buttons) */
+.btn, .btn-large, .btn-small {
+  background-color: #f7d850; 
+  color: #121212;            
+  font-weight: 600;
+  border: none;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #d6b841;
+}
+
+/* Alert Box Styling (for custom alert) */
+.custom-alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.alert-error {
+    background-color: #ffcdd2; 
+    color: #c62828;
+}
+.alert-success {
+    background-color: #c8e6c9; 
+    color: #2e7d32; 
 }
