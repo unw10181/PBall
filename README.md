@@ -20,7 +20,7 @@ a high-fidelity design.
 * HTML5
 * CSS3
 * Figma
-* *Materialize
+* Materialize
 
 
 ## Features
