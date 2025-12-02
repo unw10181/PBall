@@ -32,6 +32,18 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+/* Styling for header and Dark Mode Button */
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center; 
+padding: 1rem 2rem;
+}
+.theme-toggle {
+cursor:pointer; 
+} 
+
+
 /* Add background color */
 /* Add text color */
 
