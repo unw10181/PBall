@@ -4,7 +4,7 @@
 
 
 ## Description
-A Pickleball web application that sells tickets to weekly tournament tickets local to you along with possible cash prizes. Includes a sign-up form, an alert for when sign up is complete, a dark/light mode and
+A Pickleball web application that organizes weekly tournament competitions local to you along with possible cash prizes. Includes a sign-up form, an alert for when sign up is complete, a dark/light mode and
 a high-fidelity design. 
 
 ## Table of Contents
