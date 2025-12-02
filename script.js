@@ -1,20 +1,25 @@
-// Initialize Materialize components
-document.addEventListener('DOMContentLoaded', function() {
-  var sidenav = document.querySelectorAll('.sidenav');
-  M.Sidenav.init(sidenav);
-});
-
 // JS logic for CTA section form and submit button //
 
-// Smooth Scroll to CTA
-function scrollToSignup() {
-  document.getElementById("signup").scrollIntoView({ behavior: "smooth" });
+function isValidEmail(email) {
+  return email.includes("@") && email.includes(".");
 }
 
-//Email Validation utilizing Regex
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+// JS logic for dark and light mode //
+const btn = document.getElementById("theme-toggle");
+const btnMobile = document.getElementById("theme-toggle-mobile");
+const body = document.body;
+
+btn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
+
+btnMobile.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+});
+
+// Initialize Materialize sidenav
+const sidenav = document.querySelectorAll(".sidenav");
+M.Sidenav.init(sidenav);
 
 // Handle form submission, onclick done on submit btn.
 function submitEmail() {
@@ -44,26 +49,3 @@ function submitEmail() {
   // clear input
   emailInput.value = "";
 }
-
-// JS logic for dark and light mode //
-const btn = document.getElementById("theme-toggle");
-const btnMobile = document.getElementById("theme-toggle-mobile");
-const body = document.body;
-
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme == "dark") {
-  body.classList.add("dark-mode");
-}
-
-function toggleTheme() {
-  body.classList.toggle("dark-mode");
-
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-}
-
-btn.addEventListener("click", toggleTheme);
-btnMobile.addEventListener("click", toggleTheme);
