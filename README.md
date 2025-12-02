@@ -56,4 +56,4 @@ Clarence, Dan, and Homam are front-end developers with a passion for pickleball.
 * [CSS Flexible Box Layout Guide - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items)
 * [Website Headers with Flexbox - Ishadeed](https://ishadeed.com/article/website-headers-flexbox/)
 * [Sidenav- Materialize](https://materializecss.com/sidenav.html)
-
+* [JavaScript Regex](https://www.w3schools.com/js/js_regexp.asp)
