@@ -41,7 +41,7 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 [Github Pages](https://unw10181.github.io/PBall/))
 
 * You can view the repository:
-[Github.com](https://github.com/unw10181/PBall)
+[Github.com](https://github.com/unw10181/PBall))
 
 
 ## <a name="author"></a>About The Authors
@@ -49,5 +49,7 @@ Clarence, Dan and Homam are front-end developers with a passion about pickleball
     
 ## Works Cited:
 *https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+
 *https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items
+
 *https://ishadeed.com/article/website-headers-flexbox/
