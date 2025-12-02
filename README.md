@@ -26,6 +26,8 @@ a high-fidelity design.
 Users can toggle light and dark mode on the web-page.
 Users can submit their e-mails to sign up for the e-mai list and will receive an alert once they have submitted.
 
+## Wireframe for Project Logic
+- View the dataflows for this project here: https://lucid.app/lucidchart/8fc0105a-9cba-46b6-9869-a14051c205c0/edit?viewport_loc=-934%2C-854%2C2466%2C1138%2C0_0&invitationId=inv_adba987e-f379-485e-8538-4f4daf7a1e99
 
 ## <a name="design"></a>Design
 * Design elements implemented using HTML5 and CSS3.
