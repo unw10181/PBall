@@ -5,6 +5,10 @@ function scrollToSignup() {
   document.getElementById("signup").scrollIntoView({ behavior: "smooth" });
 }
 
+//Email Validation utilizing Regex
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
 
 // JS logic for dark and light mode //
