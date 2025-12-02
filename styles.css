@@ -46,6 +46,10 @@ cursor:pointer;
 
 /* Add background color */
 /* Add text color */
+body {
+color: #5d8b37;
+font-weight: 600;
+}
 
 
 /* Style all buttons */
