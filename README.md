@@ -34,6 +34,9 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 * Design elements implemented using HTML5 and CSS3.
 * Figma also used to create mock up design. 
 
+## Figma Design
+
+<img width="1440" height="1678" alt="Desktop - 2" src="https://github.com/user-attachments/assets/aebcc8d3-1aa1-4997-b9ec-08bb008b34ae" />
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Event Calendar and Booking Integration
