@@ -38,6 +38,7 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 * Event Calendar and Booking Integration
 * Contests and Giveaway Sign-Ups
 * Community Forums or Chat Group
+* Bracket and Scoring Tracking (DUPR API integration)
 
 ## Deployed Link
 
