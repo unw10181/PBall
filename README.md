@@ -37,19 +37,17 @@ Users can submit their e-mails to sign up for the e-mai list and will receive an
 * Contests and Giveaway Sign-Ups
 * Community Forms and Chat Group
 
-## <a name="deployment"></a>Deployed Link
-[Github Pages](https://unw10181.github.io/PBall/))
+## Deployed Link
+[GitHub Pages](https://unw10181.github.io/PBall/)
 
-* You can view the repository:
-[Github.com](https://github.com/unw10181/PBall))
+* You can view the repository:  
+[GitHub.com](https://github.com/unw10181/PBall)
 
+## About The Authors
+Clarence, Dan, and Homam are front-end developers with a passion for pickleball. You can find them at the pickleball courts when they are not in class learning about JavaScript.
 
-## <a name="author"></a>About The Authors
-Clarence, Dan and Homam are front-end developers with a passion about pickleball. You can find them at the pickleball courts when they are not in class learning about JavaScript. 
-    
 ## Works Cited:
-*https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+* [How to Toggle Dark Mode - W3Schools](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp)
+* [CSS Flexible Box Layout Guide - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items)
+* [Website Headers with Flexbox - Ishadeed](https://ishadeed.com/article/website-headers-flexbox/)
 
-*https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Aligning_items
-
-*https://ishadeed.com/article/website-headers-flexbox/
