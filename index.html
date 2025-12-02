@@ -1,288 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pickleball Organization</title>
-    <link rel="stylesheet" href="./styles.css" defer />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="logo-area">
-        <h1>The Pickleball Organization</h1>
-      </div>
-      <button id="theme-toggle" class="theme-toggle" type="button">
-        Dark/Light Mode
-      </button>
-    </header>
-    <!-- FIGMA CODE -->
 
-    <div
-      style="
-        width: 100%;
-        height: 100%;
-        position: relative;
-        background: white;
-        overflow: hidden;
-      "
-    >
-      <div
-        style="
-          width: 1440px;
-          height: 137px;
-          left: 0px;
-          top: 1541px;
-          position: absolute;
-          background: #d9d9d9;
-        "
-      ></div>
-      <div
-        style="
-          width: 1440px;
-          height: 412px;
-          left: 0px;
-          top: 141px;
-          position: absolute;
-          background: #403f3f;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        "
-      ></div>
-      <div
-        style="
-          width: 1440px;
-          height: 336px;
-          left: 0px;
-          top: 551px;
-          position: absolute;
-          background: #b2aaaa;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        "
-      ></div>
-      <div
-        style="
-          width: 219px;
-          height: 219px;
-          left: 140px;
-          top: 615px;
-          position: absolute;
-          background: #d9d9d9;
-          border-radius: 11px;
-        "
-      ></div>
-      <div
-        style="
-          width: 219px;
-          height: 219px;
-          left: 610px;
-          top: 615px;
-          position: absolute;
-          background: #d9d9d9;
-          border-radius: 11px;
-        "
-      ></div>
-      <div
-        style="
-          width: 219px;
-          height: 219px;
-          left: 1080px;
-          top: 604px;
-          position: absolute;
-          background: #d9d9d9;
-          border-radius: 11px;
-        "
-      ></div>
-      <div
-        style="
-          width: 1440px;
-          height: 141px;
-          left: 0px;
-          top: 0px;
-          position: absolute;
-          background: #9b9898;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        "
-      ></div>
-      <div
-        style="
-          left: 1038px;
-          top: 62px;
-          position: absolute;
-          color: white;
-          font-size: 20px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        HOME
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pickleball Organization</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <link rel="stylesheet" href="./style.css" /> 
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+  <div class="main-container">
+
+    <nav class="grey darken-2 z-depth-1">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo left logo">P-BALL</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        <ul class="right hide-on-med-and-down">
+          <li><a class="nav-home">HOME</a></li>
+          <li><a class="nav-services">SERVICES</a></li>
+          <li><a class="nav-join">JOIN US</a></li>
+          <li><a id="dark-mode-toggle"><i class="material-icons">brightness_4</i></a></li>
+        </ul>
       </div>
-      <div
-        style="
-          left: 1150px;
-          top: 63px;
-          position: absolute;
-          color: white;
-          font-size: 20px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        SERVICES
-      </div>
-      <div
-        style="
-          left: 1301px;
-          top: 62px;
-          position: absolute;
-          color: white;
-          font-size: 20px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        JOIN US
-      </div>
-      <div
-        style="
-          left: 65px;
-          top: 53px;
-          position: absolute;
-          color: white;
-          font-size: 48px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        P-BALL
-      </div>
-      <div
-        style="
-          width: 1440px;
-          height: 654px;
-          left: 0px;
-          top: 887px;
-          position: absolute;
-          background: #a3a3ae;
-        "
-      ></div>
-      <div
-        style="
-          width: 414px;
-          height: 126px;
-          left: 489px;
-          top: 913px;
-          position: absolute;
-          color: black;
-          font-size: 96px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        JOIN US
-      </div>
-      <div
-        style="
-          width: 621px;
-          height: 59px;
-          left: 386px;
-          top: 1108px;
-          position: absolute;
-          background: #d9d9d9;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-          border-radius: 20px;
-        "
-      ></div>
-      <div
-        style="
-          width: 621px;
-          height: 60px;
-          left: 386px;
-          top: 1231px;
-          position: absolute;
-          background: #d9d9d9;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
-          border-radius: 20px;
-        "
-      ></div>
-      <div
-        style="
-          width: 223px;
-          height: 48px;
-          left: 575px;
-          top: 1114px;
-          position: absolute;
-          color: #595959;
-          font-size: 36px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        FULL NAME
-      </div>
-      <div
-        style="
-          width: 321px;
-          height: 47px;
-          left: 536px;
-          top: 1239px;
-          position: absolute;
-          color: #656262;
-          font-size: 36px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        EMAIL ADDRESS
-      </div>
-      <div
-        style="
-          width: 322px;
-          height: 108px;
-          left: 531px;
-          top: 1358px;
-          position: absolute;
-          background: #d9d9d9;
-          box-shadow: 5px 7px 8.699999809265137px 2px rgba(0, 0, 0, 0.25);
-          border-radius: 20px;
-        "
-      ></div>
-      <div
-        style="
-          width: 153px;
-          height: 48px;
-          left: 620px;
-          top: 1388px;
-          position: absolute;
-          color: #767575;
-          font-size: 36px;
-          font-family: Inter;
-          font-weight: 800;
-          word-wrap: break-word;
-        "
-      >
-        SUBMIT
+    </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+      <li><a class="nav-home">HOME</a></li>
+      <li><a class="nav-services">SERVICES</a></li>
+      <li><a class="nav-join">JOIN US</a></li>
+      <li><a id="dark-mode-toggle-mobile"><i class="material-icons">brightness_4</i> Dark Mode</a></li>
+    </ul>
+
+    <div class="hero-section black lighten-1">
+      <div class="container center-align">
+        <h2 class="white-text">Elevate Your Pickleball Game</h2>
+        <p class="white-text flow-text">Join the fastest-growing community and organize your matches.</p>
       </div>
     </div>
 
-    <!----Nav bar-->
-    <!----Hero Section-->
-    <!---Call to Action with JS interactions-->
-    <section id="signup" class="cta-section">
-      <h2>Join Our New Player Community</h2>
-      <p>Free tips, beginner drills, equipment guides + more.</p>
+    <div class="features-section grey lighten-3 section">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4 center-align">
+            <div class="card-panel grey lighten-2 feature-box-1">
+              <i class="large material-icons">group</i>
+              <h5>Matchmaking</h5>
+            </div>
+          </div>
+          <div class="col s12 m4 center-align">
+            <div class="card-panel grey lighten-2 feature-box-2">
+              <i class="large material-icons">schedule</i>
+              <h5>Event Scheduling</h5>
+            </div>
+          </div>
+          <div class="col s12 m4 center-align">
+            <div class="card-panel grey lighten-2 feature-box-3">
+              <i class="large material-icons">assessment</i>
+              <h5>Player Stats</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <input type="email" id="emailInput" placeholder="Enter your email" />
-      <button class="signup-btn" onclick="submitEmail()">Sign Up</button>
+    <div class="join-section grey darken-1 section">
+      <div class="container center-align">
+        <h2 class="join-title white-text">JOIN US</h2>
+        <div class="row">
+          <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <form id="join-form" class="card-panel grey darken-2">
+              <div class="input-field">
+                <input id="input_name" type="text" class="input-name validate white-text">
+                <label for="input_name" class="label-name">FULL NAME</label>
+              </div>
+              <div class="input-field">
+                <input id="input_email" type="email" class="input-email validate white-text">
+                <label for="input_email" class="label-email">EMAIL ADDRESS</label>
+              </div>
+              <button type="submit" class="btn btn-large waves-effect waves-light submit-button green accent-4">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div id="alertBox" class="custom-alert"></div>
-    </section>
-    <!---Features Section-->
-  </body>
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">P-BALL Organization</h5>
+            <p class="grey-text text-lighten-4">Connecting pickleball players worldwide.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container">
+          &copy; 2025
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
 </html>
